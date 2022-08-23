@@ -23,7 +23,7 @@ export default function Start(props) {
         style={styles.image}
       >
 
-        <Text style={styles.title}>App title</Text>
+        <Text style={styles.title}>Chat tApp</Text>
 
         <View style={styles.box}>
 
@@ -37,18 +37,34 @@ export default function Start(props) {
           <Text style={styles.text}>Choose Background Color:</Text>
           <View style={styles.colorContainer}>
             <TouchableOpacity
+              accessible={true}
+              accessibilityLabel={"Select color for chatscreen background."}
+              accessibilityHint={"You can pick your own background color."}
+              accessibilityRole={"button"}
               style={[{ backgroundColor: colors.black }, styles.colorbutton]}
               onPress={() => setColor(colors.black)}
             />
             <TouchableOpacity
+              accessible={true}
+              accessibilityLabel={"Select color for chatscreen background."}
+              accessibilityHint={"You can pick your own background color."}
+              accessibilityRole={"button"}
               style={[{ backgroundColor: colors.purple }, styles.colorbutton]}
               onPress={() => setColor(colors.purple)}
             />
             <TouchableOpacity
+              accessible={true}
+              accessibilityLabel={"Select color for chatscreen background."}
+              accessibilityHint={"You can pick your own background color."}
+              accessibilityRole={"button"}
               style={[{ backgroundColor: colors.grey }, styles.colorbutton]}
               onPress={() => setColor(colors.grey)}
             />
             <TouchableOpacity
+              accessible={true}
+              accessibilityLabel={"Select color for chatscreen background."}
+              accessibilityHint={"You can pick your own background color."}
+              accessibilityRole={"button"}
               style={[{ backgroundColor: colors.green }, styles.colorbutton]}
               onPress={() => setColor(colors.green)}
             />
